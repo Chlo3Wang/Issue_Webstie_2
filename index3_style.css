@@ -1,0 +1,67 @@
+html,
+body {
+  background-color: black;
+  font-family: sans-serif;
+}
+.container {
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+  perspective: 3px;
+}
+
+.box{
+  background-size: cover;
+  color: white;
+  background-color: var(--bg, --color-black);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  }
+
+.box h1{
+  text-shadow: 0 0 3px #FF0000;
+}
+.box img{
+  background-position: center center;
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: cover;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
+  height: 100vh;
+}
+.box p{
+    height: 50vh;
+    background-color: #638a87;
+    width: 500vh;
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.5;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.box h1{
+    z-index: -1;
+    transform: translateY(-30vh) translateZ(1px) scale(1.5);
+}
+
+/*
+.footer {
+  position: relative;
+  display: block;
+  background-color: black;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h3{
+    font-weight: normal;
+    color: var(--color-blue);
+  }
+}
